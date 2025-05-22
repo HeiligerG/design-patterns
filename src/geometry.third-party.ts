@@ -36,4 +36,15 @@ export class Calculator {
       Math.pow(rectangle.getHeight(), 2) + Math.pow(rectangle.getWidth(), 2),
     );
   }
+
+  public static getWithHeightRatio(rectangle: Rectangular): number {
+    const divided = rectangle.getWidth() / rectangle.getHeight();
+    
+    if (divided === 1) {
+      console.log("The Ratio is 1:1");
+      return divided;
+    } else {
+      return divided;
+    }
+  }
 }
